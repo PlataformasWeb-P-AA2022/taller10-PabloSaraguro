@@ -1,0 +1,13 @@
+[<a href = "{% url 'index' %}">Inicio</a>]
+
+<h2>Editar parroquia</h2>
+
+    <form action = "" method = "POST">
+
+        {% csrf_token %}
+
+        {{formulario.as_p}}
+
+        <p><input type = 'submit' value = 'Actualizar'></p>
+
+    </form>
